@@ -1,0 +1,58 @@
+======================================================================
+SUPERSTORE DATA VALIDATION & INSIGHTS REPORT
+Generated: 2026-01-16 23:27:08
+======================================================================
+
+INPUT FILE:
+  /kaggle/input/superstore-cleaned/Superstore Cleaned.csv
+
+OUTPUT FILE:
+  Superstore_Final_Cleaned.csv
+
+DATA SUMMARY:
+  Total rows: 9,994
+  Total columns: 29
+
+======================================================================
+VALIDATION RESULTS
+======================================================================
+✅ No missing values
+✅ No duplicate rows
+✅ All sales values are non-negative
+✅ Date format is consistent
+✅ All discount values are within valid range
+⚠️  66 rows with extreme losses (>200% negative margin)
+
+======================================================================
+AUTOMATED BUSINESS INSIGHTS
+======================================================================
+
+🔴 Top 3 Loss-Making Sub-Categories:
+   • Tables: $-17,725.59
+   • Bookcases: $-3,472.56
+   • Supplies: $-1,188.99
+
+📉 Average Profit Margin by Discount Level:
+   ✅ 0-15%: 33.34%
+   ✅ 16-31%: 15.98%
+   ❌ 32-50%: -29.61%
+   ❌ 50%+: -113.88%
+
+🌎 Regional Performance (ranked by profit):
+   • West: Sales $725,458 | Profit $108,419
+   • East: Sales $678,781 | Profit $91,523
+   • South: Sales $391,722 | Profit $46,750
+   • Central: Sales $501,240 | Profit $39,706
+
+📦 Category Performance:
+   • Technology: Sales $836,154 | Profit $145,456 | Avg Margin 15.61%
+   • Office Supplies: Sales $719,047 | Profit $122,491 | Avg Margin 13.80%
+   • Furniture: Sales $742,000 | Profit $18,451 | Avg Margin 3.88%
+
+======================================================================
+NEXT STEPS:
+======================================================================
+1. Review this validation report
+2. Import the final CSV into SQLite using your existing SQL scripts
+3. Refresh your Power BI dashboard
+======================================================================
